@@ -1,0 +1,5 @@
+{
+    "have": ["Sticker1", "Sticker2"],
+    "need": ["Sticker3", "Sticker4"],
+    "duplicate": ["Sticker5", "Sticker6"]
+}

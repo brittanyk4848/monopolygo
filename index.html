@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly Go Sticker Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .sticker-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sticker-list li {
+            padding: 5px;
+            margin: 5px 0;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Monopoly Go Sticker Tracker</h1>
+        <div>
+            <input type="text" id="stickerName" placeholder="Sticker name">
+            <select id="stickerType">
+                <option value="have">Have</option>
+                <option value="need">Need</option>
+                <option value="duplicate">Duplicate</option>
+            </select>
+            <button onclick="addSticker()">Add Sticker</button>
+            <button onclick="copyToClipboard()">Copy to Clipboard</button>
+            <input type="file" id="fileInput">
+            <button onclick="uploadStickers()">Upload Stickers</button>
+        </div>
+        <h2>Stickers I Have</h2>
+        <ul id="haveList" class="sticker-list"></ul>
+        <h2>Stickers I Need</h2>
+        <ul id="needList" class="sticker-list"></ul>
+        <h2>Duplicate Stickers</h2>
+        <ul id="duplicateList" class="sticker-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
